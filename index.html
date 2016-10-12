@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<!-- Template Basic Images End -->
+
+	 
+
+	<!-- Bootstrap (latest) Grid Styles Only -->
+	<style>html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}input,button,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#337ab7;text-decoration:none}a:hover,a:focus{color:#23527c;text-decoration:underline}a:focus{outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}figure{margin:0}img{vertical-align:middle}.img-responsive{display:block;max-width:100%;height:auto}.img-rounded{border-radius:6px}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:4px;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;height:auto}.img-circle{border-radius:50%}hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}[role="button"]{cursor:pointer}.container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}.container-fluid{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}.row{margin-left:-15px;margin-right:-15px}.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{position:relative;min-height:1px;padding-left:15px;padding-right:15px}.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12{float:left}.col-xs-12{width:100%}.col-xs-11{width:91.66666667%}.col-xs-10{width:83.33333333%}.col-xs-9{width:75%}.col-xs-8{width:66.66666667%}.col-xs-7{width:58.33333333%}.col-xs-6{width:50%}.col-xs-5{width:41.66666667%}.col-xs-4{width:33.33333333%}.col-xs-3{width:25%}.col-xs-2{width:16.66666667%}.col-xs-1{width:8.33333333%}.col-xs-pull-12{right:100%}.col-xs-pull-11{right:91.66666667%}.col-xs-pull-10{right:83.33333333%}.col-xs-pull-9{right:75%}.col-xs-pull-8{right:66.66666667%}.col-xs-pull-7{right:58.33333333%}.col-xs-pull-6{right:50%}.col-xs-pull-5{right:41.66666667%}.col-xs-pull-4{right:33.33333333%}.col-xs-pull-3{right:25%}.col-xs-pull-2{right:16.66666667%}.col-xs-pull-1{right:8.33333333%}.col-xs-pull-0{right:auto}.col-xs-push-12{left:100%}.col-xs-push-11{left:91.66666667%}.col-xs-push-10{left:83.33333333%}.col-xs-push-9{left:75%}.col-xs-push-8{left:66.66666667%}.col-xs-push-7{left:58.33333333%}.col-xs-push-6{left:50%}.col-xs-push-5{left:41.66666667%}.col-xs-push-4{left:33.33333333%}.col-xs-push-3{left:25%}.col-xs-push-2{left:16.66666667%}.col-xs-push-1{left:8.33333333%}.col-xs-push-0{left:auto}.col-xs-offset-12{margin-left:100%}.col-xs-offset-11{margin-left:91.66666667%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-8{margin-left:66.66666667%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-5{margin-left:41.66666667%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-2{margin-left:16.66666667%}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-0{margin-left:0}@media (min-width:768px){.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12{float:left}.col-sm-12{width:100%}.col-sm-11{width:91.66666667%}.col-sm-10{width:83.33333333%}.col-sm-9{width:75%}.col-sm-8{width:66.66666667%}.col-sm-7{width:58.33333333%}.col-sm-6{width:50%}.col-sm-5{width:41.66666667%}.col-sm-4{width:33.33333333%}.col-sm-3{width:25%}.col-sm-2{width:16.66666667%}.col-sm-1{width:8.33333333%}.col-sm-pull-12{right:100%}.col-sm-pull-11{right:91.66666667%}.col-sm-pull-10{right:83.33333333%}.col-sm-pull-9{right:75%}.col-sm-pull-8{right:66.66666667%}.col-sm-pull-7{right:58.33333333%}.col-sm-pull-6{right:50%}.col-sm-pull-5{right:41.66666667%}.col-sm-pull-4{right:33.33333333%}.col-sm-pull-3{right:25%}.col-sm-pull-2{right:16.66666667%}.col-sm-pull-1{right:8.33333333%}.col-sm-pull-0{right:auto}.col-sm-push-12{left:100%}.col-sm-push-11{left:91.66666667%}.col-sm-push-10{left:83.33333333%}.col-sm-push-9{left:75%}.col-sm-push-8{left:66.66666667%}.col-sm-push-7{left:58.33333333%}.col-sm-push-6{left:50%}.col-sm-push-5{left:41.66666667%}.col-sm-push-4{left:33.33333333%}.col-sm-push-3{left:25%}.col-sm-push-2{left:16.66666667%}.col-sm-push-1{left:8.33333333%}.col-sm-push-0{left:auto}.col-sm-offset-12{margin-left:100%}.col-sm-offset-11{margin-left:91.66666667%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-8{margin-left:66.66666667%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-5{margin-left:41.66666667%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-2{margin-left:16.66666667%}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-0{margin-left:0}}@media (min-width:992px){.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{float:left}.col-md-12{width:100%}.col-md-11{width:91.66666667%}.col-md-10{width:83.33333333%}.col-md-9{width:75%}.col-md-8{width:66.66666667%}.col-md-7{width:58.33333333%}.col-md-6{width:50%}.col-md-5{width:41.66666667%}.col-md-4{width:33.33333333%}.col-md-3{width:25%}.col-md-2{width:16.66666667%}.col-md-1{width:8.33333333%}.col-md-pull-12{right:100%}.col-md-pull-11{right:91.66666667%}.col-md-pull-10{right:83.33333333%}.col-md-pull-9{right:75%}.col-md-pull-8{right:66.66666667%}.col-md-pull-7{right:58.33333333%}.col-md-pull-6{right:50%}.col-md-pull-5{right:41.66666667%}.col-md-pull-4{right:33.33333333%}.col-md-pull-3{right:25%}.col-md-pull-2{right:16.66666667%}.col-md-pull-1{right:8.33333333%}.col-md-pull-0{right:auto}.col-md-push-12{left:100%}.col-md-push-11{left:91.66666667%}.col-md-push-10{left:83.33333333%}.col-md-push-9{left:75%}.col-md-push-8{left:66.66666667%}.col-md-push-7{left:58.33333333%}.col-md-push-6{left:50%}.col-md-push-5{left:41.66666667%}.col-md-push-4{left:33.33333333%}.col-md-push-3{left:25%}.col-md-push-2{left:16.66666667%}.col-md-push-1{left:8.33333333%}.col-md-push-0{left:auto}.col-md-offset-12{margin-left:100%}.col-md-offset-11{margin-left:91.66666667%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-9{margin-left:75%}.col-md-offset-8{margin-left:66.66666667%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-6{margin-left:50%}.col-md-offset-5{margin-left:41.66666667%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-3{margin-left:25%}.col-md-offset-2{margin-left:16.66666667%}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-0{margin-left:0}}@media (min-width:1200px){.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{float:left}.col-lg-12{width:100%}.col-lg-11{width:91.66666667%}.col-lg-10{width:83.33333333%}.col-lg-9{width:75%}.col-lg-8{width:66.66666667%}.col-lg-7{width:58.33333333%}.col-lg-6{width:50%}.col-lg-5{width:41.66666667%}.col-lg-4{width:33.33333333%}.col-lg-3{width:25%}.col-lg-2{width:16.66666667%}.col-lg-1{width:8.33333333%}.col-lg-pull-12{right:100%}.col-lg-pull-11{right:91.66666667%}.col-lg-pull-10{right:83.33333333%}.col-lg-pull-9{right:75%}.col-lg-pull-8{right:66.66666667%}.col-lg-pull-7{right:58.33333333%}.col-lg-pull-6{right:50%}.col-lg-pull-5{right:41.66666667%}.col-lg-pull-4{right:33.33333333%}.col-lg-pull-3{right:25%}.col-lg-pull-2{right:16.66666667%}.col-lg-pull-1{right:8.33333333%}.col-lg-pull-0{right:auto}.col-lg-push-12{left:100%}.col-lg-push-11{left:91.66666667%}.col-lg-push-10{left:83.33333333%}.col-lg-push-9{left:75%}.col-lg-push-8{left:66.66666667%}.col-lg-push-7{left:58.33333333%}.col-lg-push-6{left:50%}.col-lg-push-5{left:41.66666667%}.col-lg-push-4{left:33.33333333%}.col-lg-push-3{left:25%}.col-lg-push-2{left:16.66666667%}.col-lg-push-1{left:8.33333333%}.col-lg-push-0{left:auto}.col-lg-offset-12{margin-left:100%}.col-lg-offset-11{margin-left:91.66666667%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-8{margin-left:66.66666667%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-5{margin-left:41.66666667%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-2{margin-left:16.66666667%}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-0{margin-left:0}}.clearfix:before,.clearfix:after,.container:before,.container:after,.container-fluid:before,.container-fluid:after,.row:before,.row:after{content:" ";display:table}.clearfix:after,.container:after,.container-fluid:after,.row:after{clear:both}.center-block{display:block;margin-left:auto;margin-right:auto}.pull-right{float:right !important}.pull-left{float:left !important}.hide{display:none !important}.show{display:block !important}.invisible{visibility:hidden}.text-hide{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.hidden{display:none !important}.affix{position:fixed}@-ms-viewport{width:device-width}.visible-xs,.visible-sm,.visible-md,.visible-lg{display:none !important}.visible-xs-block,.visible-xs-inline,.visible-xs-inline-block,.visible-sm-block,.visible-sm-inline,.visible-sm-inline-block,.visible-md-block,.visible-md-inline,.visible-md-inline-block,.visible-lg-block,.visible-lg-inline,.visible-lg-inline-block{display:none !important}@media (max-width:767px){.visible-xs{display:block !important}table.visible-xs{display:table !important}tr.visible-xs{display:table-row !important}th.visible-xs,td.visible-xs{display:table-cell !important}}@media (max-width:767px){.visible-xs-block{display:block !important}}@media (max-width:767px){.visible-xs-inline{display:inline !important}}@media (max-width:767px){.visible-xs-inline-block{display:inline-block !important}}@media (min-width:768px) and (max-width:991px){.visible-sm{display:block !important}table.visible-sm{display:table !important}tr.visible-sm{display:table-row !important}th.visible-sm,td.visible-sm{display:table-cell !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-block{display:block !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-inline{display:inline !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-inline-block{display:inline-block !important}}@media (min-width:992px) and (max-width:1199px){.visible-md{display:block !important}table.visible-md{display:table !important}tr.visible-md{display:table-row !important}th.visible-md,td.visible-md{display:table-cell !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-block{display:block !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-inline{display:inline !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-inline-block{display:inline-block !important}}@media (min-width:1200px){.visible-lg{display:block !important}table.visible-lg{display:table !important}tr.visible-lg{display:table-row !important}th.visible-lg,td.visible-lg{display:table-cell !important}}@media (min-width:1200px){.visible-lg-block{display:block !important}}@media (min-width:1200px){.visible-lg-inline{display:inline !important}}@media (min-width:1200px){.visible-lg-inline-block{display:inline-block !important}}@media (max-width:767px){.hidden-xs{display:none !important}}@media (min-width:768px) and (max-width:991px){.hidden-sm{display:none !important}}@media (min-width:992px) and (max-width:1199px){.hidden-md{display:none !important}}@media (min-width:1200px){.hidden-lg{display:none !important}}.visible-print{display:none !important}@media print{.visible-print{display:block !important}table.visible-print{display:table !important}tr.visible-print{display:table-row !important}th.visible-print,td.visible-print{display:table-cell !important}}.visible-print-block{display:none !important}@media print{.visible-print-block{display:block !important}}.visible-print-inline{display:none !important}@media print{.visible-print-inline{display:inline !important}}.visible-print-inline-block{display:none !important}@media print{.visible-print-inline-block{display:inline-block !important}}@media print{.hidden-print{display:none !important}}</style>
+
+	<!-- Header CSS (first screen styles from header.min.css) - inserted in the build of the project -->
+	<style>h2,h4,h5,p{color:#000}.main-login .main-mnu .mnu-content a:active,.main-login .main-mnu .mnu-content a:focus,a:hover{text-decoration:none}::-webkit-input-placeholder{color:#666;opacity:1}:-moz-placeholder{color:#666;opacity:1}::-moz-placeholder{color:#666;opacity:1}:-ms-input-placeholder{color:#666;opacity:1}body input:focus:required:invalid,body input:required:valid,body textarea:focus:required:invalid,body textarea:required:valid{color:#666}body{font-size:16px;min-width:320px;position:relative;line-height:1.6;font-family:Panton;overflow-x:hidden}h2,h3{font-family:PantonBold}.clearfix:after{content:"";display:table;clear:both}.left{float:left}.right{float:right}h2{font-size:25px}h3{font-size:21px;color:#fff;text-transform:uppercase}h4{font-size:17px;font-family:Panton}h5{font-size:15px;font-family:PantonBold;margin-top:0}p{font-size:14px;font-family:Panton}.header_adress,.header_adress .addres_navigation li a{color:#333;font-size:13px}.pleft{padding-left:0}.header_adress{font-family:PantonBold;text-align:center;padding:7px 0;background-color:#f5f5f5}.header_adress span{font-family:Panton;clear:left;display:block}.header_adress .addres_navigation li a,.header_center_content_lg .grafic_work_lg h5,.header_down .phone,.main-login .login_top nav.nav_menu ul li a,.main-login .main-mnu .mnu-content a,.main-login .main_footer span.mail{font-family:PantonBold}.header_adress .addres_navigation{list-style-type:none}.header_adress .addres_navigation li{display:inline-block;margin-right:10px}.header_adress .addres_navigation li:last-child{margin-right:0}.header_center{padding:15px 0;vertical-align:middle}.header_center .search{text-align:left}.header_center .buy img,.header_center .search img{padding-top:20px}.header_center .logo{text-align:center}.header_center .buy{text-align:right;padding-right:5%}.header_down{background-color:#323231;padding:11px 0}.header_down .phone{color:#fff;font-size:18px;text-align:center}.header_down .lang{text-align:right}.main-login .main-mnu{background-color:#3c3c3b}.main-login .main-mnu .mnu-content{list-style-type:none;text-align:left;margin:0;padding-left:0}.main-login .main-mnu .mnu-content li{padding:15px 0;border-bottom:1px solid #595958;position:relative}.main-login .main-mnu .mnu-content li:last-child{border-bottom:none}.main-login .main-mnu .mnu-content a{color:#fff;text-transform:uppercase;font-size:15px}.main-login .main-mnu .mnu-content .fa{color:#fff;font-size:14px;position:absolute;right:2.5%;top:35%}.main-login .login_top{padding:15px 0 0}.main-login .login_top h5{display:inline-block}.main-login .login_top nav.nav_menu{background-color:#f5f5f5}.main-login .login_top nav.nav_menu ul{list-style-type:none;padding-left:0;margin:0}.main-login .login_top nav.nav_menu ul li{padding-bottom:15px}.main-login .login_top nav.nav_menu ul li:first-child{padding-top:15px}.main-login .login_top nav.nav_menu ul li a{color:#3c3c3b;font-size:15px}.main-login .main_footer{background-color:#3c3c3b;padding-top:12px}.main-login .main_footer span.mail{color:#fff;font-size:14px;text-decoration:underline}.main-login .main_footer .main_social .fa{color:#9e9e9d;font-size:20px;padding-top:12px;padding-bottom:12px}.main-login .main_footer .main_social .fa:hover{color:#fff}.toggle-mnu{display:block;width:28px;height:28px}.toggle-mnu span:after,.toggle-mnu span:before{content:"";position:absolute;left:0;top:9px}.toggle-mnu span:after{top:18px}.toggle-mnu span{position:relative;display:block}.toggle-mnu span,.toggle-mnu span:after,.toggle-mnu span:before{width:100%;height:2px;background-color:#fff;-webkit-transition:all .3s;transition:all .3s;-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-border-radius:2px;border-radius:2px}.toggle-mnu.on span{background-color:transparent}.toggle-mnu.on span:before{-webkit-transform:rotate(45deg) translate(-1px,0);-ms-transform:rotate(45deg) translate(-1px,0);transform:rotate(45deg) translate(-1px,0)}.toggle-mnu.on span:after{-webkit-transform:rotate(-45deg) translate(6px,-7px);-ms-transform:rotate(-45deg) translate(6px,-7px);transform:rotate(-45deg) translate(6px,-7px)}.header_center_content_lg .basket_buy_lg,.header_center_content_lg .grafic_work_lg,.header_center_content_lg .personal_cabinet_lg,.header_center_content_lg .search_item_lg,.header_center_content_lg .telephone_lg{display:inline-block;margin-left:50px;vertical-align:middle}.header_center_content_lg .grafic_work_lg h5{font-size:17px;text-transform:uppercase;color:#000;margin-top:0;margin-bottom:0}.header_center_content_lg span{font-family:PantonSemiBold;font-size:13px;color:#666}.header_center_content_lg .telephone_lg h3{color:#000;margin-bottom:0;margin-top:0}.header_center_content_lg .telephone_lg a{font-size:13px;color:#666;font-family:PantonSemiBold;text-decoration:underline}.header_center_content_lg .search_item_lg .search{display:inline-block}.header_center_content_lg .search_item_lg .search img{padding:0 10px 13px 0}.header_center_content_lg .search_item_lg span{display:inline-block}.header_center_content_lg .personal_cabinet_lg img{padding:0 10px 0 0}.header_center_content_lg .personal_cabinet_lg span{display:inline-block;vertical-align:middle}.header_center_content_lg .basket_buy_lg .basket_wrapper{display:inline-block}.header_center_content_lg .basket_buy_lg .basket_wrapper img{padding-right:15px}.header_center_content_lg .basket_buy_lg .basket_wrapper:hover{width:30px;height:30px;border:2px solid #000;-webkit-border-radius:50%;border-radius:50%}.header_center_content_lg .basket_buy_lg .basket_wrapper:hover img{margin-left:3px}.header_center_content_lg .basket_buy_lg .basket_text{display:inline-block;vertical-align:middle}.header_center_content_lg .basket_buy_lg .basket_text h5{margin-bottom:0}.header_center_content_lg .basket_buy_lg .basket_text .basket_cont span{font-size:13px;font-family:PantonBold;color:#000}.lang_desktop{text-align:center}.lang_desktop img{padding-top:10px}</style>
+
+	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)};function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n};function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+
+	<!-- Load Fonts CSS Start -->
+	<script>
+		loadCSS( "css/fonts.min.css?ver=1.0.0", false, "all" ); // Loading fonts, if the site is located in a subfolder
+		// loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" ); // Loading fonts, if the site is at the root
+	</script>
+	<!-- Load Fonts CSS End -->
+
+	<!-- Load Custom CSS Start -->
+	
+	<script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script>
+	<!-- Load Custom CSS End -->
+
+	<!-- Load Custom CSS Compiled without JS Start -->
+	<noscript>
+		<link rel="stylesheet" href="css/fonts.min.css">
+		<link rel="stylesheet" href="css/main.min.css">
+	</noscript>
+	<!-- Load Custom CSS Compiled without JS End -->
+
+	<!-- Custom Browsers Color Start -->
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<!-- Custom Browsers Color End -->
+
+</head>
+	<header class="header">
+		<div class="header_adress">
+			<div class="container  header_adress_wrapper">
+				<div class="header_adress_content">
+					Шоу-рум: 
+					<span>1-ый Новокузнецкий пер. д. 10 стр 1</span>
+				</div>
+				<ul class="addres_navigation hidden-xs hidden-sm hidden-md">
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Доставка и оплата</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="header_center">
+			<div class="container">
+			<div class="row">
+				<div class="col-xs-2 hidden-lg">
+					<div class="search">
+						<a href="#"><img src="img/search.png" ></a>
+					</div>
+				</div>
+				<div class="col-xs-8  col-lg-2  logo_setka">
+					<div class="logo">
+						<a href="#"><img src="img/logo.png" ></a>
+					</div>
+				</div>
+				<div class="col-lg-10 hidden-xs hidden-sm hidden-md">
+					<div class="header_center_content_lg">
+						<div class="grafic_work_lg">
+							<h5>For Mom &amp; kid</h5>
+							<span>Пн-Пт: 10:00 - 20:00 </span>
+						</div>
+
+						<div class="telephone_lg">
+							<h3>+ 7 925 581 5331</h3>
+							<a href="#">Заказать звонок</a>
+						</div>
+
+						<div class="search_item_lg">
+							<div class="search">
+								<a href="#"><img src="img/search.png" ></a>
+							</div>
+							<span>Поиск<br> товаров</span>
+						</div>
+
+						<div class="personal_cabinet_lg">
+							<a href="#"><img src="img/cabinet.png"></a>
+							<span>Личный<br> кабинет</span>
+						</div>
+
+						<div class="basket_buy_lg">
+							<div class="basket_wrapper">
+								<a href="#"><img src="img/buy.png" ></a>
+							</div>
+							<div class="basket_text">
+							<h5>Моя корзина</h5>
+							<div class="basket_cont">
+								<span>1</span> товар / <span>35800</span> руб
+							</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="col-xs-2  hidden-lg">
+					<div class="buy">
+						<a href="#"><img src="img/buy.png" ></a>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+
+		<div class="header_down">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-2">
+						<div class="button_menu">
+							<a href="#" class="toggle-mnu on hidden-lg"><span></span></a>
+						</div>
+					</div>
+					<div class="col-xs-8 hidden-lg">
+						<div class="phone">
+								+ 7 925 581 5331
+						</div>
+					</div>
+					<div class="col-xs-2 hidden-lg">
+						<div class="lang">
+							<a href="#"><img src="img/l_russ.png" ></a>
+						</div>
+					</div>
+				</div>	
+
+			</div>
+			</div>
+		</div>
+
+		<div class="main-login">
+			<div class="main-mnu">
+			 <div class="container mmnu_container">
+				<div class="col-lg-10 mnu_setka">
+			  <ul class="mnu-content">
+			  	<li class="hidden-xs hidden-sm hidden-md"><a href="#">Распродажа</a></li>
+				<li><a href="#">кормящим <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
+				<li><a href="#">беременным <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
+				<li><a href="#">детям <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
+				<li><a href="#">новинки</a></li>
+				<li><a href="#">lookbook</a></li>
+			  </ul>
+				</div>
+				<div class="col-lg-2">
+					
+					<div class="lang_desktop  hidden-sm hidden-xs hidden-md">
+						<a href="#"><img src="img/l_russ.png"></a>
+					</div>
+
+				</div>
+			  </div>
+			</div>
+			<div class="login_top">
+			 <div class="container personal_cabinet">
+			  	<img src="img/cabinet.png">
+			  	<h5>Личный кабинет</h5>
+			  </div>
+			  <nav class="nav_menu  hidden-lg">
+			   <div class="container">			  	
+			   		<ul>  	
+					<li><a href="#">Оплата и доставка</a></li>
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Шоу-рум</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">Карта сайта</a></li>
+			  	</ul>
+			  	</div>
+			  </nav>
+				<div class="main_footer">
+					<div class="container">
+						<span class="mail">hello@beebeep.ru</span>
+						<div class="main_social">
+					<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</header>
+
+	<div class="children hidden-xs hidden-sm hidden-md">
+		<div class="img_children">
+			<img src="img/children.png">
+		</div>
+		<div class="children_text">
+			<h5>Поддержи<br> благотворительный фонд</h5>
+			<span>Дети Наши</span>
+			<a href="#">Подробнее</a>
+		</div>
+	</div>
+
+	<section class="catalog">
+		
+		<div class="container  catalog_wrapper">
+			<div class="catalog_item">
+				<a href="#"><img class="catalog_1" src="img/c_1.png"></a>
+				<h3>Кормящим</h3>
+				<a href="#" class="ct_buy">Перейти к покупкам</a>
+			</div>
+			<div class="catalog_item">
+				<a href="#"><img src="img/catalog_2.png"></a>
+				<h3>Беременым</h3>
+				<a href="#" class="ct_buy">Перейти к покупкам</a>
+			</div>
+			<div class="catalog_item">
+				<a href="#"><img src="img/c_3.png"></a>
+				<h3>Детям</h3>
+				<a href="#" class="ct_buy">Перейти к покупкам</a>
+			</div>
+		</div>
+
+	</section>
+	<section class="advantage">
+	 <div class="container">
+		<div class="adv_item">
+		<img src="img/bg_icon_1.png" >
+			<div class="adv_text">
+		<h5>Оригинальные товары</h5>
+		<span>от российских дизайнеров</span>
+		</div>
+		</div>
+		<div class="adv_item_garantia">
+		<img src="img/bg_icon_2.png" >
+			<div class="adv_text">
+		<h5>гарантия качества</h5>
+		<span>обмен и возврат в течение 14 дней</span>
+		</div>
+		</div>
+		<div class="adv_item">
+		<img src="img/bg_icon_3.png" >
+			<div class="adv_text">
+		<h5> Благотворительность</h5>
+		<span>поддерживаем БФ «Дети наши»</span>
+		</div>
+		</div>
+	 </div>
+	</section>
+
+	<section class="new">
+		
+		<h2>Новинки</h2>
+
+		<div class="new_catalog">
+			
+			<div class="container new_catalog_wrapper">
+			
+				<div class="new_item">
+					<div class="new_first">
+						<img src="img/new_1.png">
+						<a href="#">Хлопковая блуза с объемными<br> рукавами</a>
+						<span class="last_price">2940 руб.</span>
+						<h3>2940 <span class="rub">руб.</span></h3>
+						<div class="new">
+							<h5>New</h5>
+						</div>
+					</div>
+						<div class="new_first">
+						<img src="img/new_2.png">
+						<a href="#">Хлопковая блуза с объемными<br> рукавами</a>
+						<span class="last_price">2940 руб.</span>
+						<h3>2940 <span class="rub">руб.</span></h3>
+					</div>
+						<div class="new_first">
+						<img src="img/new_3.png">
+						<a href="#">Хлопковая блуза с объемными<br> рукавами</a>
+						<span class="last_price">2940 руб.</span>
+						<h3>2940 <span class="rub">руб.</span></h3>
+						<div class="sale">
+							<img class="sale_20" src="img/sale_20.png" >
+						</div>
+					</div>
+						<div class="new_first">
+						<img src="img/new_4.png">
+						<a href="#">Хлопковая блуза с объемными<br> рукавами</a>
+						<span class="last_price">2940 руб.</span>
+						<h3>2940 <span class="rub">руб.</span></h3>
+						<div class="new">
+							<h5>New</h5>
+						</div>
+					</div>
+					<div class="new_first">
+						<img src="img/pop_1.png">
+						<a href="#">Хлопковая блуза с объемными<br> рукавами</a>
+						<span class="last_price">2940 руб.</span>
+						<h3>2940 <span class="rub">руб.</span></h3>
+						<div class="new">
+							<h5>New</h5>
+						</div>
+					</div>
+				</div>
+				<div class="customNavigation">
+					  <a class="btn prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+ 					  <a class="btn next"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+				</div>
+				<a href="#" class="all_wiew">Посмотреть все</a>
+
+
+			</div>
+
+		</div>
+
+	</section>
+
+	<section class="popular">
+		
+		<h2>Популярные</h2>
+
+		<div class="pop_catalog">
+			
+			<div class="container pop_catalog_wrapper">
+				
+				<div class="pop_item">
+					<div class="pop-first">
+					<img src="img/pop_1.png">
+					<a href="#">Хлопковая блуза с объемными<br> рукавами</a>
+					<h3>2940 <span class="rub">руб.</span></h3>
+					</div>
+					<div class="pop-first">
+					<img src="img/pop_2.png">
+					<a href="#">Хлопковая блуза с объемными<br> рукавами</a>
+					<h3>2940 <span class="rub">руб.</span></h3>
+					</div>
+					<div class="pop-first">
+					<img src="img/pop_3.png">
+					<a href="#">Хлопковая блуза с объемными<br> рукавами</a>
+					<h3>2940 <span class="rub">руб.</span></h3>
+					</div>
+					<div class="pop-first">
+					<img src="img/pop_4.png">
+					<a href="#">Хлопковая блуза с объемными<br> рукавами</a>
+					<h3>2940 <span class="rub">руб.</span></h3>
+					</div>
+					<div class="pop-first">
+					<img src="img/new_4.png">
+					<a href="#">Хлопковая блуза с объемными<br> рукавами</a>
+					<h3>2940 <span class="rub">руб.</span></h3>
+					</div>
+				</div>
+				<div class="customNavigation">
+					  <a class="btn pop_prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+ 					  <a class="btn pop_next"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+				</div>
+				<a href="#" class="all_wiew">Посмотреть все</a>
+
+			</div>
+
+		</div>
+
+	</section>
+
+	<section class="lookbook">
+		<h2>LookBook</h2>
+		<h5>Фото стильных образов</h5>
+		<div class="container  look_img_wrapper">
+			<ul class="look_img">
+				<li><img src="img/book_1.png"></li>
+				<li><img src="img/book_2.png"></li>
+				<li><img src="img/book_3.png"></li>
+				<li><img src="img/book_4.png"></li>
+				<li><img src="img/book_5.png"></li>
+			</ul>
+			<div class="customNavigation">
+				<a class="btn look_prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+ 				<a class="btn look_next"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+			</div>
+			<a href="#" class="all_wiew">Посмотреть все</a>
+		</div>
+	</section>
+
+	<section class="seo_text">
+		
+		<div class="container  seo_text_content">
+			
+			<h4>Beebeep - российский бренд одежды для детей, будущих и молодых мам. </h4>
+			<p>We opened our Sefton mens store in 1999 in Islington, London. We set out with the aim of providing our customers with a distinctly English curation of clean, contemporary and functional garments selected from the very best global brands and designers.</p>
+			<p>Amongst our family of brands we have always interspersed into the mix our own Sefton line of unique essentials sourced from the finest factories around the world and produced exclusively for our customer.</p>
+			<p>Brands and aesthetics may have changed over the years, but our philosophy has been carried through to today as our team of creative individuals focus on bringing the best product and service to our customers in an ever changing variety of channels.</p>
+
+		
+
+		<div class="more">
+		<a href="#" class="all_wiew">Узнать о нас больше</a>
+		</div>
+		</div>
+
+	</section>
+
+	<section class="show_room">
+		
+		<div class="container show_room_container">
+			
+			<div class="room">
+				
+				<div class="show_1">
+					<div class="room_img">
+						<img src="img/room_1.png">
+					</div>
+					<div class="show_one_content">
+						<h2>шоу-рум «beebeep»</h2>
+						<h5>Мы всегда рады видеть Вас  в нашем  шоу-руме по адресу: </h5>
+						<a href="#" class="all_wiew">г. Москва, Соловьиный пр., д. 18 "А"</a>  
+					</div>         				
+				</div>
+				<div class="show_2">
+					<div class="gift_img">
+						<img src="img/gift.png">
+					
+					<div class="for_sub">
+						<img src="img/medium_gift.png">
+						<h5>Подарок<br> за подписку</h5>
+					</div>
+					</div>
+				<div class="show_two_content">
+					<h2>Будьте в курсе событий</h2>
+					<h5>Подпишитесь на бесплатную e-mail рассылку и получайте подарки</h5>
+					<div class="email_sub">
+						<input type="text" placeholder="E-mail">
+					</div>
+					<div class="podpisatsea">
+						<a href="#" class="subscribe">Подписаться</a>
+					</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+
+	<footer>
+		<div class="ftr_up">
+			<div class="container social_information">
+
+			<ul class="ftr_information">
+				<li><i class="fa fa-phone" aria-hidden="true"></i> <h5 class="phone">+7 925 581 5331</h5></li>
+				<li><i class="fa fa-envelope" aria-hidden="true"></i><h5 class="envelope">hello@beebeep.ru</h5></li>
+				<li><i class="fa fa-map-marker" aria-hidden="true"></i><h5 class="marker">г. Москва, Соловьиныйпр., д. 18 "А"</h5></li>
+			</ul>
+
+			<div class="ftr_social">
+				<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			</div>
+			</div>
+		</div>
+	<div class="ftr_down">
+		<div class="container">
+		  <div class="ftr_down_content">
+				<div class="ftr_left_content_catalog">
+					<h5>Каталог</h5>
+					<ul>
+						<li><a href="#">Беременым</a></li>
+						<li><a href="#">Кормящим</a></li>
+						<li><a href="#">Детям</a></li>
+						<li><a href="#">LookBook</a></li>
+					</ul>
+				</div>
+				<div class="ftr_left_content_information">
+					<h5>Информация</h5>
+					<ul>
+						<li><a href="#">Оплата и доставка</a></li>
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Шоу-рум</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Карта сайта</a></li>
+					</ul>
+				</div>
+				<div class="ftr_center_content">
+					<div class="small_gift">
+						<img src="img/gift_small.png">
+					</div>
+					<h5>Подписка:</h5>
+					<div class="f_email">
+						<input type="text" placeholder="E-mail">
+						<a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
+					
+					<a href="index.html"><img src="img/f_logo.png" ></a>
+					<div class="coph">
+						<i class="fa fa-copyright" aria-hidden="true"></i>
+						<span>2009-2016 «Название» </span>
+					</div>
+				</div>
+					<div class="payment hidden-xs hidden-sm hidden-lg">
+					<h5>Методы оплаты</h5>
+						<ul>
+							<li><a href="#">Visa/MasterCard</a></li>
+							<li><a href="#">Qiwi</a></li>
+							<li><a href="#">Yandex money</a></li>
+							<li><a href="#">paypal</a></li>
+							<li><a href="#">WebMoney</a></li>
+						</ul>
+					</div>
+				<div class="ftr_right_content">
+					
+					<h5>Принимаем к оплате</h5>
+					<ul class="oplata">
+						<li><a href="#"><img src="img/visa_money.png" ></a></li>
+						<li><a href="#"><img src="img/yandex_money.png" ></a></li>
+						<li><a href="#"><img src="img/qiwi_money.png" ></a></li>
+						<li><a href="#"><img src="img/mastercard.png" ></a></li>
+					</ul>
+					<a href="">Карта сайта</a>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	</footer>
+
+<script src='libs/jquery/dist/jquery.min.js'></script>
+<script src='libs/OwlCarousel/owl-carousel/owl.carousel.min.js'></script>
+<body>
+
+
+
+
+	<!-- Optimized loading JS Start -->
+	<script>var scr = {"scripts":[
+		{"src" : "js/libs.min.js", "async" : false},
+		{"src" : "js/common.js", "async" : false}
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
+
+	<!-- Optimized loading JS End -->
+
+</body>
+</html>
